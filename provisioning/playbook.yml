@@ -52,8 +52,8 @@
       slf_sandbox_id: "{{ kypo_global_sandbox_allocation_unit_id | default() }}"
       slf_sandbox_name: '{{ kypo_global_sandbox_name | default() }}'
       slf_pool_id: '{{ kypo_global_pool_id | default() }}'
-      slf_access_token: '{{ access_token }}'
-      slf_user_id: '{{ student_id }}'
+      slf_access_token: '{{ access_token | default() }}'
+      slf_user_id: '{{ student_id | default() }}'
       slf_local_env: '{% if kypo_global_sandbox_allocation_unit_id is defined -%} false {%- else -%} true {%- endif %}'
     - role: sandbox-logging-bash
 
