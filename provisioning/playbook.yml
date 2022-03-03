@@ -44,7 +44,6 @@
   become: yes
   become_user: root
   vars:
-    student_id: 0
     sandbox_name: junior-hacker-local
     central_syslog_ip: 78.128.251.179
   roles:
