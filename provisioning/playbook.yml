@@ -54,7 +54,7 @@
       slf_pool_id: '{{ kypo_global_pool_id | default() }}'
       slf_access_token: '{{ access_token | default() }}'
       slf_user_id: '{{ student_id | default() }}'
-      slf_local_env: '{% if kypo_global_sandbox_allocation_unit_id is defined -%} false {%- else -%} true {%- endif %}'
+      slf_local_env: '{% if kypo_global_sandbox_allocation_unit_id is defined -%} False {%- else -%} True {%- endif %}'
     - role: sandbox-logging-bash
 
 - name: setup logging msf
