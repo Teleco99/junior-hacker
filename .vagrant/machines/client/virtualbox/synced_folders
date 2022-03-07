@@ -1,1 +1,0 @@
-{"rsync":{"/vagrant":{"type":"rsync","rsync__exclude":".git/","guestpath":"/vagrant","hostpath":"/home/dominik/Desktop/Workspace/SANDBOX-DEFINITIONS/junior-hacker","disabled":false,"__vagrantfile":true,"exclude":".git/","owner":"vagrant","group":"vagrant"}}}
